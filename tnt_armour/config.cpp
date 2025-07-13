@@ -3,7 +3,8 @@ class cfgPatches {
         name = "293rd Clone Siege Battalion Armour";
         authors[]={
             "Gray",
-            "Neifer"
+            "Neifer",
+            "Devbo123"
         };
         weapons[]={};
         units[]={};
@@ -48,7 +49,6 @@ class cfgWeapons {
         };
     };
 };
-
 class cfgVehicles {
     class ls_clone_phase2_base;
     class tnt_armour_trooper_F: ls_clone_phase2_base {
