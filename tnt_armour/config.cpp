@@ -36,6 +36,7 @@ class cfgWeapons {
         author = "Neifer";
         displayName = "[293rd] Trooper Helmet";
         hiddenSelections[]={"camo1"};
+		hiddenSelectionsMaterials[]={"tnt_armour\data\rvmats\helmet.rvmat"};
         hiddenSelectionsTextures[]={"tnt_armour\data\tnt_helmet_trooper_CO.paa"};
     };
     class tnt_armour_trooper: SWLB_clone_uniform {
