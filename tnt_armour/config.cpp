@@ -73,7 +73,7 @@ class cfgWeapons {
 			mass=2;
 		};
 	};
-    class tnt_hood_toast: swlb_clone_p1_helmet {
+    class tnt_hood_toast: ls_gar_phase1_helmet {
         author = "Toast";
         displayName = "[293rd] Master Toast Hood";
         model = "tnt_armour\data\Jedi_Hood_Toast.p3d";
