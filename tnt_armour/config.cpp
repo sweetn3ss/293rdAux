@@ -34,9 +34,13 @@ class cfgWeapons {
     class tnt_helmet_trooper: ls_gar_phase1_helmet {
         author = "Neifer";
         displayName = "[293rd] Trooper Helmet";
-        hiddenSelections[]={"camo1"};
+        hiddenSelections[]={"camo1","visor","illum"};
 		hiddenSelectionsMaterials[]={"tnt_armour\data\rvmats\helmet.rvmat"};
-        hiddenSelectionsTextures[]={"tnt_armour\data\tnt_helmet_trooper_CO.paa"};
+        hiddenSelectionsTextures[]={
+            "tnt_armour\data\tnt_helmet_trooper_CO.paa",
+            "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa",
+            "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"
+        };
     };
     class tnt_armour_trooper: ls_gar_phase2_uniform {
         author = "Neifer";
