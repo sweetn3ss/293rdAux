@@ -11,8 +11,7 @@ class cfgPatches {
         requiredVersion=0.1;
         requiredAddons[]={
             "ls_armor_bluefor",
-            "SWLB_groundholders",
-            "SWLB_clones",
+            "ls_characters_clone_legacy",
             "ls_characters_clone"
         };
     };
@@ -29,17 +28,17 @@ class cfgWeapons {
 	class H_HelmetO_ViperSP_hex_F;
 	class V_PlateCarrier1_rgr;
 	class NVGoggles;
-    class swlb_clone_p1_helmet;
-    class SWLB_clone_uniform;
+    class ls_gar_phase1_helmet;
+    class ls_gar_phase2_uniform;
 
-    class tnt_helmet_trooper: swlb_clone_p1_helmet {
+    class tnt_helmet_trooper: ls_gar_phase1_helmet {
         author = "Neifer";
         displayName = "[293rd] Trooper Helmet";
         hiddenSelections[]={"camo1"};
 		hiddenSelectionsMaterials[]={"tnt_armour\data\rvmats\helmet.rvmat"};
         hiddenSelectionsTextures[]={"tnt_armour\data\tnt_helmet_trooper_CO.paa"};
     };
-    class tnt_armour_trooper: SWLB_clone_uniform {
+    class tnt_armour_trooper: ls_gar_phase2_uniform {
         author = "Neifer";
         displayName = "[293rd] Trooper Armour";
         class ItemInfo: UniformItem {
@@ -86,8 +85,8 @@ class cfgWeapons {
     };
 };
 class cfgVehicles {
-    class ls_clone_phase2_base;
-    class tnt_armour_trooper_F: ls_clone_phase2_base {
+    class lsd_gar_phase2_base;
+    class tnt_armour_trooper_F: lsd_gar_phase2_base {
         author = "Neifer";
         scope = 1;
         displayName = "-";
@@ -101,5 +100,14 @@ class cfgVehicles {
         displayName = "-";
         uniformClass = "tnt_jedi_uniform_toast";
         model = "tnt_armour\data\jedi_uniform_toast.p3d";
+    };
+};
+
+class cfgGlasses {
+    class ls_clone_phase1_hud;
+    class ls_clone_headlampPhase1_hud: ls_clone_phase1_hud {
+        ACE_Overlay = "";
+        ACE_OverlayCracked = "";
+        ACE_OverlayDirt = "";
     };
 };
