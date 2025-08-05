@@ -29,7 +29,7 @@ class cfgWeapons {
 	class V_PlateCarrier1_rgr;
 	class NVGoggles;
     class ls_gar_phase1_helmet;
-    class ls_gar_phase2_uniform;
+    class ls_cloneUniform_phase2;
 
     class tnt_helmet_trooper: ls_gar_phase1_helmet {
         author = "Neifer";
@@ -42,7 +42,7 @@ class cfgWeapons {
             "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"
         };
     };
-    class tnt_armour_trooper: ls_gar_phase2_uniform {
+    class tnt_armour_trooper: ls_cloneUniform_phase2 {
         author = "Neifer";
         displayName = "[293rd] Trooper Armour";
         class ItemInfo: UniformItem {
@@ -89,8 +89,8 @@ class cfgWeapons {
     };
 };
 class cfgVehicles {
-    class lsd_gar_phase2_base;
-    class tnt_armour_trooper_F: lsd_gar_phase2_base {
+    class ls_clone_phase2_base;
+    class tnt_armour_trooper_F: ls_clone_phase2_base {
         author = "Neifer";
         scope = 1;
         displayName = "-";
